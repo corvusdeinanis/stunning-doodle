@@ -7,6 +7,11 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.setServerOptions({
     watch: ["dist/app.js", "dist/app.*.css"],
   });
+  
+  eleventyConfig.addCollection("notes", (collectionApi) => {
+  return collectionApi.getSortedByDate()
+    .filter((post) => post.data.emoji !== undefined);
+});
 
   return {
     pathPrefix: process.env.ELEVENTY_NOTES_PATH_PREFIX || undefined,
