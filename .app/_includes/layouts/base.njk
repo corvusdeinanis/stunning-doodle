@@ -27,6 +27,14 @@ panel: true
       </div>
     </div>
 
+<ul>
+    {% for note in notes %}
+      <li>
+        <a href="{{ note.url }}">{{ note.emoji }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+
     <script src="/app.js" data-base="{{ '/' | htmlBaseUrl }}"></script>
 
     <div aria-hidden="true" hidden>
