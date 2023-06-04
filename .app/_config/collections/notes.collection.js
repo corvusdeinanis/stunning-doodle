@@ -10,6 +10,7 @@ module.exports = (eleventyConfig) => (collectionApi) => {
     date: note.date,
     url: note.url,
     data: note.data,
+    emoji: note.emoji,
   }));
 };
 
