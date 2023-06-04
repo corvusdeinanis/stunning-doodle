@@ -26,7 +26,7 @@ panel: true
         {{ content | safe }}
       </div>
     </div>
-
+<div>
 <ul>
     {% for note in notes %}
       <li>
@@ -34,7 +34,7 @@ panel: true
       </li>
     {% endfor %}
     </ul>
-
+</div>
     <script src="/app.js" data-base="{{ '/' | htmlBaseUrl }}"></script>
 
     <div aria-hidden="true" hidden>
