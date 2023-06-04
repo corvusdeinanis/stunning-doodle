@@ -1,3 +1,11 @@
-<a href="{{ page.url }}" class="note">
-  <span class="emoji">{{ page.emoji }}</span>
-</a>
+<div class="note-grid">
+  {% for note in collections.all %}
+  {% if note.filePathStem.startsWith('/notes/') %}
+  {% with noteData = note.data %}
+  <div class="note-item">
+    {% include 'note.njk' with page = noteData %}
+  </div>
+  {% endwith %}
+  {% endif %}
+  {% endfor %}
+</div>
