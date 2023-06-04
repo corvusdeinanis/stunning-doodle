@@ -16,3 +16,6 @@ Eleventy Notes has many great features you'll love:
 - ... and much more!
 
 Start using Eleventy Notes by reading the [[Getting started]] guide.
+
+{% include 'note-grid.njk' %}
+          
