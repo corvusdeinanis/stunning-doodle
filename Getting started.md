@@ -1,6 +1,7 @@
 ---
 sort: 1
 tags: ["basics"]
+emoji: '🤡'
 ---
 
 ## Prerequisites
