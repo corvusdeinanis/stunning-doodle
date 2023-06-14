@@ -18,38 +18,8 @@
         "pattern": "^/[^/]+$"
       },
       {
-        "pattern": "^/Writing/",
-        "label": "Writing Notes",
-        "expanded": false,
-        "tree": {
-          "replace": {
-            "^/\\w+": ""
-          }
-        }
-      },
-      {
-        "pattern": "^/Organizing/",
-        "label": "Organizing Notes",
-        "expanded": false
-      },
-      {
-        "pattern": "^/Features/",
-        "label": "Core Features",
-        "expanded": false,
-        "tree": {
-          "replace": {
-            "^/\\w+": ""
-          }
-        }
-      },
-      {
-        "pattern": "^/Deployment/",
-        "label": "Deployment",
-        "expanded": false
-      },
-      {
-        "pattern": "^/Releases/",
-        "label": "Releases",
+        "pattern": "^/wiki/",
+        "label": "wiki",
         "expanded": false
       }
     ]
